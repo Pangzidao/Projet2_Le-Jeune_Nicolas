@@ -10,14 +10,20 @@
     src: url("/css/Raleway/Raleway-VariableFont_wght.ttf");
 }
 
-img{
-    padding-left: 20%;
+body{
+    margin-left: 50px;
+    font-size: larger;
+
 }
+
+/* header */
 
 header{
     display: flex;
     justify-content: space-between;
 }
+
+
 
 nav{
     display: flex;
@@ -29,7 +35,6 @@ nav a{
     width: 50%;
     text-align: center;
     padding-top: 50px;
-    font-size: larger;
     border-top: solid white;
 }
 
@@ -38,6 +43,47 @@ nav a:hover {
     color: #0065FC;
 
 }
+
+/* Zone de recherche */
+
+form p{
+    border: solid #F2F2F2;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+form p i{
+    background-color: #F2F2F2;
+    font-size: xx-large;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: #F2F2F2;
+}
+
+form p input{
+    border:none;
+    font-size: large;
+    padding: 20px;
+
+}
+
+form p input:focus{
+    outline: none;
+}
+#boutonDeRecherche{
+    background-color: #0065FC;
+    height: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #F2F2F2;
+    border: #0065FC;
+
+}
+
 /* Responsive pour tablettes */
 
 @media screen and (max-width:992px){
@@ -68,4 +114,6 @@ nav a:hover {
         border-top: solid white;
         border-bottom: solid #0065FC;
     }
+
+
 }
