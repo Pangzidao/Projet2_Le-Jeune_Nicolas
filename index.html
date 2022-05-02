@@ -23,19 +23,35 @@
 
         </header>
         
-        <section>
+        <section id="champDeRecherche">
             <h1>Trouver votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
                 <p>
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i id="logoDeRecherche" class="fa-solid fa-location-dot"></i>
                     <input type="text" name="recherche" id="recherche" value="Marseille, France"/>
-                    <input id="boutonDeRecherche" type="submit" value="Rechercher"/>             
+                    <button id="boutonDeRecherche" type="submit" >Recherche</button>
+                    <button id="boutonDeRechercheMobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>           
                 </p>
             </form>
 
         </section>
+
+        <section id="sectionDesFiltres">
+          
+            <p>Filtres</h2></p>
+
+            <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></div>
+            <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Familial</p></div>
+            <div class="filtres"><i class="fa-solid fa-heart"></i><p>Romantique</p></div>
+            <div class="filtres"><i class="fa-solid fa-dog"></i><p>Animaux Autorisés</p></div>
+
+        
+        </section>
+
+        <p id="logoInfo" ><i class="fa-solid fa-circle-info"></i>Plus de 500 logements disponibles dans la ville</p>
+
 
         </section>
 

@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    color: black;
 }
 
 @font-face {
@@ -23,7 +22,9 @@ header{
     justify-content: space-between;
 }
 
-
+header figure{
+    padding-left: 40px;
+}
 
 nav{
     display: flex;
@@ -36,6 +37,7 @@ nav a{
     text-align: center;
     padding-top: 50px;
     border-top: solid white;
+    color: black;
 }
 
 nav a:hover {
@@ -55,7 +57,12 @@ form p{
     margin-top: 50px;
 }
 
-form p i{
+#champDeRecherche h1{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#logoDeRecherche{
     background-color: #F2F2F2;
     font-size: xx-large;
     padding: 20px;
@@ -84,6 +91,64 @@ form p input:focus{
 
 }
 
+#boutonDeRechercheMobile{
+    display: none;
+}
+
+/* section des filtres */
+
+#sectionDesFiltres{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#sectionDesFiltres p{
+    margin:20px;
+}
+
+.filtres{
+    border:solid #F2F2F2;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin: 20px; 
+
+}
+
+.filtres:hover{
+    background-color: #DEEBFF;
+}
+
+.filtres i{
+    background-color: #DEEBFF;
+    font-size: xx-large;
+    border-radius: 100%;
+    padding: 20px;
+    margin: -10px;
+    color: #0065FC;
+
+
+}
+
+
+#logoInfo{
+    display: flex;
+    align-items: center;
+}
+
+#logoInfo i{
+    border-radius: 100%;
+    font-size: xx-large;
+    background-color: white;
+    color: #0065FC;
+    margin:10px;
+}
+
+
 /* Responsive pour tablettes */
 
 @media screen and (max-width:992px){
@@ -92,6 +157,10 @@ form p input:focus{
 /* Responsive pour mobiles */
 
 @media screen and (max-width:768px) {
+
+    body{
+        margin-left: 0px;
+    }
 
     header{
         flex-direction: column;
@@ -113,6 +182,31 @@ form p input:focus{
     nav a:hover{
         border-top: solid white;
         border-bottom: solid #0065FC;
+    }
+
+    #boutonDeRecherche{
+        display: none;
+    }
+
+    section h1, p{
+        margin: 20px;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boutonDeRechercheMobile{
+        display: flex;
+        background-color: #0065FC;
+        height: 70px;
+        border-radius:20px;
+        color: #F2F2F2;
+        border: #0065FC;
+        padding:20px;
+        font-size: xx-large;
     }
 
 
