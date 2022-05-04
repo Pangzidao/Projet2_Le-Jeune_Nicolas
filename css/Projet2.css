@@ -37,17 +37,17 @@ header{
 
 nav{
     display: flex;
-    width: 30%;
+    flex-basis: 30%;
 }
 
 nav a{
     text-decoration: none;
-    width: 50%;
+    color: black;
+    flex-basis: 50%;
     min-width: 130px;
     text-align: center;
     padding-top: 50px;
     border-top: solid white;
-    color: black;
 }
 
 nav a:hover {
@@ -58,19 +58,21 @@ nav a:hover {
 
 /* Zone de recherche */
 
+#champDeRecherche h1{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
 form p{
-    border: solid #F2F2F2;
-    width: fit-content;
     display: flex;
-    align-items: center;
+    width: fit-content;
+    border: solid #F2F2F2;
     border-radius: 30px;
     margin-top: 50px;
 }
 
-#champDeRecherche h1{
-    font-size: x-large;
-    font-weight: 900;
-}
+
 
 #logoDeRecherche{
     background-color: #F2F2F2;
@@ -81,27 +83,21 @@ form p{
     border: #F2F2F2;
 }
 
-#recherche{
+#zoneDeRecherche{
     font-weight:bold;
-}
-
-form p input{
     border:none;
     font-size: large;
-    padding: 20px;
-
+    padding-left: 20px;
 }
 
-form p input:focus{
-    outline: none;
-}
+
 #boutonDeRecherche{
-    background-color: #0065FC;
     height: 70px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    color: #F2F2F2;
+    background-color: #0065FC;
     border: #0065FC;
+    color: #F2F2F2;
 
 }
 
@@ -130,14 +126,11 @@ form p input:focus{
 }
 
 .filtres{
+    display: flex;
+    align-items: center;
     border:solid #F2F2F2;
     border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
     margin: 20px; 
-
 }
 
 .filtres:hover{
@@ -162,18 +155,17 @@ form p input:focus{
 
 #info{
     display: flex;
-    align-items: baseline;
 }
 
 #logoInfo {
     border-radius: 100%;
     font-size: large;
     border: solid #F2F2F2;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
     color: #0065FC;
     margin:10px;
-    text-align: center;
 }
 
 
@@ -242,8 +234,5 @@ form p input:focus{
         padding:20px;
         font-size: xx-large;
     }
-
-
-
 
 }
