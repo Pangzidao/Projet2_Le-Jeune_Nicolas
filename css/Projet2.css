@@ -1,18 +1,29 @@
-*{
-    box-sizing: border-box;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+/* Fonts*/
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/css/Raleway/static/Raleway-Regular.ttf")
+
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/css/Raleway/Raleway-Italic-VariableFont_wght.ttf");
-    src: url("/css/Raleway/Raleway-VariableFont_wght.ttf");
+    src: url(/css/Raleway/static/Raleway-SemiBold.ttf);
+    font-weight: bold;
+}
+
+/* Propriétés pour toute la page */
+
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    
 }
 
 body{
     margin-left: 50px;
-    font-size: larger;
-
+    margin-right: 50px;
+    font-size:large;
 }
 
 /* header */
@@ -22,9 +33,7 @@ header{
     justify-content: space-between;
 }
 
-header figure{
-    padding-left: 40px;
-}
+
 
 nav{
     display: flex;
@@ -34,6 +43,7 @@ nav{
 nav a{
     text-decoration: none;
     width: 50%;
+    min-width: 130px;
     text-align: center;
     padding-top: 50px;
     border-top: solid white;
@@ -58,7 +68,7 @@ form p{
 }
 
 #champDeRecherche h1{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
 }
 
@@ -69,6 +79,10 @@ form p{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: #F2F2F2;
+}
+
+#recherche{
+    font-weight:bold;
 }
 
 form p input{
@@ -96,6 +110,13 @@ form p input:focus{
 }
 
 /* section des filtres */
+
+#titreEtSectionDesFiltres{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
 
 #sectionDesFiltres{
     display: flex;
@@ -131,21 +152,28 @@ form p input:focus{
     margin: -10px;
     color: #0065FC;
 
-
 }
 
+#logoFamille{
+    padding-left: 23px;
+    padding-right:23px;
+}
+/* Info */
 
-#logoInfo{
+#info{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
-#logoInfo i{
+#logoInfo {
     border-radius: 100%;
-    font-size: xx-large;
-    background-color: white;
+    font-size: large;
+    border: solid #F2F2F2;
+    padding-left: 8px;
+    padding-right: 8px;
     color: #0065FC;
     margin:10px;
+    text-align: center;
 }
 
 
@@ -160,14 +188,17 @@ form p input:focus{
 
     body{
         margin-left: 0px;
+        margin-right: 0px;
     }
+    /* header pour mobile */
 
     header{
         flex-direction: column;
+        align-items: center;
     }
 
     #logo{
-        margin: auto;
+        padding-left: 70px;
     }
     
     nav{
@@ -175,6 +206,7 @@ form p input:focus{
     }
 
     nav a {
+        padding-top: 0px;
         padding-bottom: 20px;
         border-bottom: solid #F2F2F2;
     }
@@ -183,6 +215,8 @@ form p input:focus{
         border-top: solid white;
         border-bottom: solid #0065FC;
     }
+
+    /* Zone de recherche pour mobile */
 
     #boutonDeRecherche{
         display: none;
@@ -208,6 +242,8 @@ form p input:focus{
         padding:20px;
         font-size: xx-large;
     }
+
+
 
 
 }

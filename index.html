@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="/css/normalize.css"/>
         <link rel="stylesheet" href="/css/Projet2.css"/>
         <script src="https://kit.fontawesome.com/513c2c7c9c.js" crossorigin="anonymous"></script>
@@ -10,6 +10,9 @@
     </head>
 
     <body>
+
+        <!--header-->
+
         <header>
             <figure id="logo">
                 <img src="/assets/images/logo/Booki.png" alt="Logo de Booki"/>
@@ -22,9 +25,11 @@
             </nav>
 
         </header>
+
+        <!--Section de recherche-->
         
         <section id="champDeRecherche">
-            <h1>Trouver votre hébergement pour des vacances de rêves</h1>
+            <h1 id="titreChampDeRecherche">Trouver votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
@@ -38,22 +43,34 @@
 
         </section>
 
-        <section id="sectionDesFiltres">
+        <!--Section des filtres-->
+
+        <section id="titreEtSectionDesFiltres">
           
             <p>Filtres</h2></p>
 
-            <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></div>
-            <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Familial</p></div>
-            <div class="filtres"><i class="fa-solid fa-heart"></i><p>Romantique</p></div>
-            <div class="filtres"><i class="fa-solid fa-dog"></i><p>Animaux Autorisés</p></div>
+            <div id="sectionDesFiltres">
+                <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></div>
+                <div class="filtres"><i id="logoFamille" class="fa-solid fa-child-reaching"></i><p>Familial</p></div>
+                <div class="filtres"><i class="fa-solid fa-heart"></i><p>Romantique</p></div>
+                <div class="filtres"><i class="fa-solid fa-dog"></i><p>Animaux Autorisés</p></div>
+
+            </div>
 
         
         </section>
 
-        <p id="logoInfo" ><i class="fa-solid fa-circle-info"></i>Plus de 500 logements disponibles dans la ville</p>
+        <!--Infos-->
+
+        <div id="info">
+
+            <figure id="logoInfo"><i class="fa-solid fa-info"></i></figure>
+            <p>Plus de 500 logements disponibles dans la ville</p>
+
+        </div>
 
 
-        </section>
+
 
         
 
