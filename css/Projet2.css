@@ -176,6 +176,89 @@ form p input:focus{
     text-align: center;
 }
 
+/* Section des hébergements */
+
+#hebergements{
+    margin-top:50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergementsMarseille{
+    flex-basis: 64%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+}
+
+#hebergementsMarseille h2,h4{
+    padding-left: 20px;  
+}
+
+
+
+#zoneCarteHebergement{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.carte {
+    background-color: white;
+    flex-basis: 28%;
+    min-width: 230px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column ;
+
+}
+
+.carte:hover{
+    box-shadow: 10px 5px 5px black;
+    margin: 15px;
+}
+.carte a{
+    text-decoration: none;
+    color: black;
+}
+
+.imageCarte img{
+    width: 100%;
+    padding: 5px 5px 0px 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 150px;
+
+}
+
+.corpsCarte{
+    font-size: small;
+    padding-left: 5px;
+
+}
+
+.notes{
+    padding: 5px;
+    display: flex;
+}
+
+.noteBleu{
+    color: #0065FC;
+}
+
+.noteGrise{
+    color: #F2F2F2;
+}
+#lesPlusPopulaires{
+
+    flex-basis: 32%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
 
 /* Responsive pour tablettes */
 
