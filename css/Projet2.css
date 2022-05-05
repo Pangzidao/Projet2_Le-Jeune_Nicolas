@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url(/css/Raleway/static/Raleway-SemiBold.ttf);
+    src: url("/css/Raleway/static/Raleway-SemiBold.ttf");
     font-weight: bold;
 }
 
