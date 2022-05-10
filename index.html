@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,44 +14,41 @@
         <!--header-->
 
         <header>
-            <figure id="logo">
-                <img src="assets/images/logo/Booki.png" alt="Logo de Booki"/>
-            </figure>
+                
+            <img id ="logo" src="assets/images/logo/Booki.png" alt="Logo de Booki"/>
+      
 
-            <nav>
-                <a href="#hebergements">Hébergements</a>
-                <a href="#">Activités</a>
-            
+            <nav id="menu-header">
+                <a class="lien-header" href="#hebergements">Hébergements</a>
+                <a class="lien-header" href="#activites">Activités</a>
             </nav>
 
         </header>
 
         <!--Section de recherche-->
         
-        <section id="champDeRecherche">
-            <h1 id="titreChampDeRecherche">Trouver votre hébergement pour des vacances de rêves</h1>
+        <section id="champ-de-recherche">
+            <h2 id="titre-champ-de-recherche">Trouver votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
-                <p>
-                    <i id="logoDeRecherche" class="fa-solid fa-location-dot"></i>
-                    <input type="text" name="recherche" id="recherche" value="Marseille, France"/>
-                    <button id="boutonDeRecherche" type="submit" >Recherche</button>
-                    <button id="boutonDeRechercheMobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>           
-                </p>
+                <i id="logo-de-recherche" class="fa-solid fa-location-dot"></i>
+                <input id="zone-de-recherche" type="text" name="recherche"  value="Marseille, France"/>
+                <button id="bouton-de-recherche" type="submit" >Rechercher</button>
+                <button id="bouton-de-recherche-mobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>           
             </form>
 
         </section>
 
         <!--Section des filtres-->
 
-        <section id="titreEtSectionDesFiltres">
+        <section id="titre-et-section-des-filtres">
           
-            <p>Filtres</h2></p>
+            <p id="titre-section-des-filtres">Filtres</p>
 
-            <div id="sectionDesFiltres">
-                <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></div>
-                <div class="filtres"><i id="logoFamille" class="fa-solid fa-child-reaching"></i><p>Familial</p></div>
+            <div id="section-des-filtres">
+                <div class="filtres"><i class="fa-solid fa-money-bill-wave"></i></i><p>Économique</p></div>
+                <div class="filtres"><i id="logo-famille" class="fa-solid fa-child-reaching"></i><p>Familial</p></div>
                 <div class="filtres"><i class="fa-solid fa-heart"></i><p>Romantique</p></div>
                 <div class="filtres"><i class="fa-solid fa-dog"></i><p>Animaux Autorisés</p></div>
 
@@ -62,12 +59,12 @@
 
         <!--Infos-->
 
-        <div id="info">
+        <section id="info">
 
-            <figure id="logoInfo"><i class="fa-solid fa-info"></i></figure>
+            <i id="logo-info" class="fa-solid fa-info"></i>
             <p>Plus de 500 logements disponibles dans la ville</p>
 
-        </div>
+        </section>
 
         <!--Section des hébergements-->
 
@@ -237,12 +234,231 @@
 
                     
             <section id="lesPlusPopulaires">
-                <h6>Les plus populaires</h6>
+                <h2>Les plus populaires</h2>
+                <div id="zoneCarteLesPlusPopulaires">
+                    <div class="cartePopulaire">
+
+                        <div class="cartePopulaireImage">
+                            <img src="/assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+
+                        </div>
+
+                        <div class="cartePopulaireTexte">
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <strong>128$</strong></p>
+
+                            </div>
+                       
+
+                            <div class="notes">
+                                <div class="noteBleu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+    
+                                </div>
+    
+                            </div> 
+
+                        </div>
+
+                    </div>
+
+                    <div class="cartePopulaire">
+
+                        <div class="cartePopulaireImage">
+                            <img src="/assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+
+                        </div>
+
+                        <div class="cartePopulaireTexte">
+                            <div>
+                                <h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
+                                <p>Nuit à partir de <strong>71$</strong></p>
+
+                            </div>
+                       
+
+                            <div class="notes">
+                                <div class="noteBleu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+    
+                                </div>
+    
+                            </div> 
+
+                        </div>
+                        
+
+                        
+                    </div>
+
+                    <div class="cartePopulaire">
+
+                        <div class="cartePopulaireImage">
+                            <img src="/assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+
+                        </div>
+
+                        <div class="cartePopulaireTexte">
+                            <div>
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>68$</strong></p>
+
+                            </div>
+                       
+
+                            <div class="notes">
+                                <div class="noteBleu">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+    
+                                </div>
+    
+                            </div> 
+
+                        </div>
+
+                        
+                    </div>
+                    
+
+                </div>
     
     
             </section>
 
         </section>
+
+        <!--Section des activités-->
+
+        <section id="activites">
+            <h2>Activités à Marseille</h2>
+
+            <div class="zoneActivites">
+
+    
+                <div class="carteActivites">
+                    <a href="#"><img src="/assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        width="500px">
+                        <p>Vieux port</p></a>
+                </div>
+
+                <div class="colonneCarteActivitesPetite">
+
+
+               
+                    <div class="carteActivitesPetites">
+                        <a href="#"><img src="/assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        width="200px">
+                        
+                         <p>Vieux port</p></a>
+
+                    </div>
+
+                    <div class="carteActivitesPetites">
+                        <a href="#"><img src="/assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        width="200px">
+                        
+                        <p>Vieux port</p></a>
+
+                    </div>
+          
+                </div>
+
+                <div class="carteActivites">
+                    <a href="#"><img src="/assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        width="500px">
+                        <p>Vieux port</p></a>
+                </div>  
+                <div class="colonneCarteActivitesPetite">
+
+
+               
+                    <div class="carteActivitesPetites">
+                        <a href="#"><img src="/assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        width="200px">
+                        
+                         <p>Fort de Pomègues</p></a>
+
+                    </div>
+
+                    <div class="carteActivitesPetites">
+                        <a href="#"><img src="/assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        width="200px">
+                        
+                        <p>Vieux port</p></a>
+
+                    </div>
+          
+                </div>
+
+            </div>
+  
+
+
+        </section>
+
+        <footer id="footer">
+
+            <div class="colonneFooter">
+                <h4>À propos</h4>
+                <div class="lienFooter">
+
+                    <a  href="#">Fonctionnement du site</a>
+                    <a  href="#">Conditions générales de vente</a>
+                    <a  href="#">Données et confidentialité</a>
+            
+                </div >
+                
+               
+            
+            </div>
+
+
+            <div class="colonneFooter">
+                <h4>Nos Hébergements</h4>
+                <div class="lienFooter">
+
+                    <a  href="#">Charte qualité</a>
+                    <a  href="#">Soumettre votre hôtel</a>
+
+                </div >
+            
+            </div>
+
+
+            <div class="colonneFooter">
+                <h4>Assistance</h4>
+                <div class="lienFooter">
+
+                    <a  href="#">Centre d'aide</a>
+                    <a  href="#">Nous contacter</a>
+
+                    
+                
+
+
+                </div >
+                
+               
+            
+            </div>
+
+    
+
+ 
+        </footer>
 
 
 
