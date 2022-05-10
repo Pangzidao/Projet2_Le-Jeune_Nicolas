@@ -275,8 +275,12 @@ form {
     margin: 30px;
 }
 
-#lesPlusPopulaires h2{
-    margin:40px 0px 0px 40px;
+#titre-section-populaire{
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
 }
 
 #zoneCarteLesPlusPopulaires{
@@ -319,90 +323,81 @@ form {
 
 /*Section des activités*/
 
-#activites{
-    height:400px;
-    width: 100%;
-    margin-left:20px;
+
+#activites h2{
+    margin-left: 30px;
 }
 
-.zoneActivites{
+#zoneActivites{
     display:flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .carteActivites{
 
     width: 300px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:baseline;
-    overflow: hidden;
-    text-decoration: none;
-    color: black;
     box-shadow: 10px 10px 10px;
     border-radius: 20px;
-    margin:20px;
-
-
+    margin: 20px;
 }
+
+.carte-activite-image{
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 80%;
+}
+
+.carte-activite-texte{
+    margin-left:20px;
+    font-weight: bold;
+}
+
+
 
 .carteActivitesPetites{
 
     width: 300px;
     height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:baseline;
-    overflow: hidden;
-    text-decoration: none;
-    color: black;
     box-shadow: 10px 10px 10px;
     border-radius: 20px;
     margin:20px;
-
 }
 
-
-.carteActivites img{
-    height: 250px;
+.petite-carte-activite-image{
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 65%;
 }
 
-.carteActivitesPetites img{
-    height: 90px;
-}
-
-.carteActivites p{
+.petite-carte-activite-texte{
+    margin-left:20px;
     font-weight: bold;
-    margin-left: 15px;
 }
 
-.carteActivitesPetites p{
-    font-weight: bold;
-    margin-left: 15px;
-}
 
 /* Section du footer */
 
 #footer{
     width: 100%;
-    height:200px;
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
 }
 
 .colonneFooter{
-    height: 100%;
     width:30%;
+    margin-bottom: 30px;
+
 }
+
 
 
 .lienFooter{
     margin-left: 20px;
-    height:100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -489,26 +484,60 @@ form {
     }
      /* section des hébergements pour mobile*/
 
-  
-
-    #lesPlusPopulaires{
-        width: 100%;
-    }
-    #hebergements{
+     #hebergements{
         flex-direction: column-reverse;
         height: fit-content;
     }
 
-    #hebergements-marseille{
-        margin:30px 0px 30px 0px;
-        border-radius: 0px;
-    }
-
     #lesPlusPopulaires{
+        width: 100%;
         margin:30px 0px 30px 0px;
         border-radius: 0px;
     }
 
+    .cartePopulaire{
+        width: 90%;
+    }
+
+
+    #hebergements-marseille{
+        width: 100%;
+        margin:30px 0px 30px 0px;
+        border-radius: 0px;
+    }
+
+    .carte-hebergement{
+        width: 90%;
+
+    }
+
+    #activites{
+        height: fit-content;
+    }
+
+    #zoneActivites{
+        width: 100%;
+        margin:30px 0px 30px 0px;
+        border-radius: 0px;
+
+    }
+
+    .carteActivites{
+        height: 150px;
+        width: 90%;
+    }
+
+    .carte-activite-image{
+        height: 70%;
+    }
+
+    .colonneCarteActivitesPetite{
+        width: 100%;
+    }
+
+    .carteActivitesPetites{
+        width: 90%;
+    }
 
 
 
