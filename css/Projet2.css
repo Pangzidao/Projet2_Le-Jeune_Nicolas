@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("/css/Raleway/Raleway-VariableFont_wght.ttf");
+    src: url("../css/Raleway/Raleway-VariableFont_wght.ttf");
     font-weight: 100 1000;
 }
 
@@ -13,8 +13,6 @@
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     color: black;
     text-decoration: none;
-
-    
 }
 
 /* header */
@@ -41,7 +39,6 @@ header{
     text-align: center;
     padding-top: 50px;
     border-top: solid white;
-    color: black;
 }
 
 .lien-header:hover {
@@ -229,12 +226,6 @@ form {
     margin-left: 2%;
     margin-top: 2%;
     margin-right: 2%;
-
-}
-
-.image-carte-hebergement img{
-    width: 100%;
-
 }
 
 .corps-carte-hebergement h3{
