@@ -220,12 +220,18 @@ form {
 
 .image-carte-hebergement{
     height:120px;
-    overflow: hidden;
     border-top-right-radius: 15px;
     border-top-left-radius:15px;
     margin-left: 2%;
     margin-top: 2%;
     margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-carte-hebergement img{
+    position: absolute;
+    object-fit:scale-down;
 }
 
 .corps-carte-hebergement h3{
